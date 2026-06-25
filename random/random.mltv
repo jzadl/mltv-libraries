@@ -1,0 +1,36 @@
+embed_rust("""
+use rand::prelude::*;
+use rand::rngs::StdRng;
+use std::cell::RefCell;
+
+thread_local! {
+    static RNG: RefCell<StdRng> = RefCell::new(StdRng::from_entropy());
+}
+
+pub fn seed(s: u64) {
+    RNG.with(|rng| *rng.borrow_mut() = StdRng::seed_from_u64(s));
+}
+pub fn rand_int(lo: i64, hi: i64) -> i64 {
+    RNG.with(|rng| rng.borrow_mut().gen_range(lo..=hi))
+}
+pub fn random() -> f64 {
+    RNG.with(|rng| rng.borrow_mut().gen::<f64>())
+}
+pub fn uniform(lo: f64, hi: f64) -> f64 {
+    RNG.with(|rng| rng.borrow_mut().gen_range(lo..hi))
+}
+pub fn rand_range(lo: i64, hi: i64) -> i64 {
+    RNG.with(|rng| rng.borrow_mut().gen_range(lo..hi))
+}
+pub fn rand_bool() -> bool {
+    RNG.with(|rng| rng.borrow_mut().gen::<bool>())
+}
+pub fn gaussian(mean: f64, stddev: f64) -> f64 {
+    RNG.with(|rng| {
+        let u1: f64 = rng.borrow_mut().gen();
+        let u2: f64 = rng.borrow_mut().gen();
+        let z = (-2.0 * u1.ln()).sqrt() * (2.0 * std::f64::consts::PI * u2).cos();
+        mean + z * stddev
+    })
+}
+""")

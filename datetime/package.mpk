@@ -1,0 +1,4 @@
+package.name        datetime
+package.version     1.0
+package.author      jzadl
+package.description "Date/time functions for Molotov"

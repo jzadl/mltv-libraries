@@ -1,0 +1,4 @@
+package.name        os
+package.version     1.0
+package.author      jzadl
+package.description "OS and filesystem functions for Molotov"

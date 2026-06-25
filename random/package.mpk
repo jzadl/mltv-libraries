@@ -1,0 +1,4 @@
+package.name        random
+package.version     1.0
+package.author      jzadl
+package.description "Random number utilities for Molotov"
