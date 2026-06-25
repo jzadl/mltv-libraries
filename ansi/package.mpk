@@ -1,0 +1,4 @@
+package.name        ansi
+package.version     1.0
+package.author      jzadl
+package.description "ANSI escape code functions for Molotov"
