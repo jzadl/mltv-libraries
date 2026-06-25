@@ -1,4 +1,3 @@
-embed_rust("""
 use rand::prelude::*;
 use rand::rngs::StdRng;
 use std::cell::RefCell;
@@ -33,4 +32,3 @@ pub fn gaussian(mean: f64, stddev: f64) -> f64 {
         mean + z * stddev
     })
 }
-""")

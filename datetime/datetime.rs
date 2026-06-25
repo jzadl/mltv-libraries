@@ -1,4 +1,3 @@
-embed_rust("""
 pub fn now_secs() -> i64 {
     std::time::SystemTime::now()
         .duration_since(std::time::UNIX_EPOCH)
@@ -53,7 +52,3 @@ pub fn today_iso() -> String {
 fn is_leap(y: i64) -> bool {
     (y % 4 == 0 && y % 100 != 0) || y % 400 == 0
 }
-""")
-
-def __check():
-    pass

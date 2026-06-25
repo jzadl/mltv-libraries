@@ -1,4 +1,3 @@
-embed_rust("""
 pub fn sin(x: f64) -> f64 { x.sin() }
 pub fn cos(x: f64) -> f64 { x.cos() }
 pub fn tan(x: f64) -> f64 { x.tan() }
@@ -38,4 +37,3 @@ pub fn trunc(x: f64) -> f64 { x.trunc() }
 pub fn fract(x: f64) -> f64 { x.fract() }
 pub fn ldexp(x: f64, exp: i32) -> f64 { x * (2.0f64).powi(exp) }
 pub fn pow(x: f64, y: f64) -> f64 { x.powf(y) }
-""")
