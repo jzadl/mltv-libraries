@@ -1,0 +1,4 @@
+package.name        json
+package.version     1.0
+package.author      jzadl
+package.description "JSON serialization and utilities for Molotov (wraps serde_json)"

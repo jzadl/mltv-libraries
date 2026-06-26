@@ -1,0 +1,4 @@
+package.name        crypto
+package.version     1.0
+package.author      jzadl
+package.description "Encoding and hashing utilities for Molotov (base64, hex)"

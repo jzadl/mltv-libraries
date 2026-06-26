@@ -1,0 +1,4 @@
+package.name        text
+package.version     1.0
+package.author      jzadl
+package.description "String and text processing utilities for Molotov"

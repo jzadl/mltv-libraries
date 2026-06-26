@@ -1,0 +1,4 @@
+package.name        collections
+package.version     1.0
+package.author      jzadl
+package.description "Collection and iterator utilities for Molotov"
