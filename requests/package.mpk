@@ -1,0 +1,4 @@
+package.name        requests
+package.version     1.0
+package.author      jzadl
+package.description "HTTP requests via curl (ports Python's requests library)"

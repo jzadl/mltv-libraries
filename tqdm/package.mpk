@@ -1,0 +1,4 @@
+package.name        tqdm
+package.version     1.0
+package.author      jzadl
+package.description "Progress bar utilities for Molotov (ports Python's tqdm)"

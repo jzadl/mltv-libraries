@@ -1,0 +1,4 @@
+package.name        bs4
+package.version     1.0
+package.author      jzadl
+package.description "Minimal HTML parser (ports BeautifulSoup4 basic functionality)"

@@ -1,0 +1,4 @@
+package.name        dotenv
+package.version     1.0
+package.author      jzadl
+package.description "Load .env files into environment variables (ports python-dotenv)"
